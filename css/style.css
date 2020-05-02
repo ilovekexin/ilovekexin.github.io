@@ -1028,7 +1028,7 @@ a:focus {
 }
 a:hover,a:active {
     outline:0;
-    color:orange
+    color:Orange
 }
 .site-top {
     width:100%;
@@ -1232,7 +1232,7 @@ a:hover,a:active {
 }
 .pattern-center-blank {
     padding-top:75px;
-    background-color:#fff
+    background-color:#FF6666
 }
 @media(max-width:860px) {
     .pattern-center-sakura {
@@ -1252,7 +1252,7 @@ a:hover,a:active {
     bottom:0;
     left:0;
     right:0;
-    background-color:rgba(0,0,0,.3)
+    background-color:rgba(255,102,102,.3)
 }
 .pattern-attachment-img {
     background-repeat:no-repeat;
@@ -1353,7 +1353,7 @@ a:hover,a:active {
 .yya {
     position:fixed;
     left:0;
-    background:rgba(255,255,255,.95);
+    background:rgba(255,102,102,.95);
     box-shadow:0 1px 40px -8px rgba(0,0,0,.5)
 }
 .gizle {
@@ -1362,7 +1362,7 @@ a:hover,a:active {
     z-index:9999
 }
 .site-header:hover {
-    background-color:#fff
+    background-color:#FF6666
 }
 .sabit {
     top:0;
@@ -1476,7 +1476,7 @@ a:hover,a:active {
 .site-top ul li a {
     padding:10px 0;
     display:inline-block;
-    color:#666
+    color:#fff
 }
 .site-top ul li a:hover {
     color:orange
@@ -1487,7 +1487,7 @@ a:hover,a:active {
     position:absolute;
     bottom:-16px;
     height:6px;
-    background-color:#fe9600;
+    background-color:#fff;
     width:100%;
     max-width:0;
     transition:max-width .25s ease-in-out
@@ -1548,7 +1548,7 @@ a:hover,a:active {
     display:none;
     opacity:1;
     position:absolute;
-    background:#fff;
+    background:#FF6666;
     padding:10px;
     top:46px;
     right:-13px;
@@ -1568,7 +1568,7 @@ a:hover,a:active {
     margin-left:-10px;
     border-width:10px;
     border-style:solid;
-    border-color:transparent transparent #fff transparent
+    border-color:transparent transparent #FF69B4 transparent
 }
 @-webkit-keyframes fadeInUp {
     0% {
@@ -2152,14 +2152,17 @@ h1.entry-title {
     text-transform:uppercase
 }
 .entry-header h1.entry-title:before {
-    content:" {";
+    content:" {
+    ";
     color:#f8ba0b;
     font-size:1.5em;
     margin-right:6px;
     vertical-align:sub
 }
 .entry-header h1.entry-title:after {
-    content:"}";
+    content:"
+}
+";
     color:#f8ba0b;
     font-size:1.5em;
     margin-left:6px;
@@ -3938,23 +3941,22 @@ li.feature-2 {
 }
 @media(max-width:860px) {
     #centerbg {
-        height:300px;
-        background-attachment:scroll
-    }
-    .focusinfo .header-tou img {
-        width: 100px !important;
-        height: 100px !important;
-    }
-    .header-info {
-        width: 90% !important;
-    }
-    .header-info:before {
-        top: 98px !important;
-    }
-    .top-social_v2 li {
-        margin-right: 0px !important; 
-        cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur),auto !important;
-    }
+    height:300px;
+    background-attachment:scroll
+}
+.focusinfo .header-tou img {
+    width: 100px !important;
+}
+.header-info {
+    width: 90% !important;
+}
+.header-info:before {
+    top: 98px !important;
+}
+.top-social_v2 li {
+    margin-right: 0px !important; 
+    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur),auto !important;
+}
 }
 #bgvideo {
     position: absolute;
@@ -3991,8 +3993,6 @@ li.feature-2 {
     border-radius:100%
 }
 .focusinfo .header-tou img {
-    width:130px;
-    height:130px;
     box-shadow:inset 0 0 10px #000;
     padding:5px;
     opacity:1;
@@ -4978,7 +4978,7 @@ i.iconfont.js-toggle-search.iconsearch {
 #mo-nav ul {
     width:200px;
     height:auto;
-    padding: 0px;
+    margin:10px 9px
 }
 #mo-nav ul:hover li {
     color:rgba(255,255,255,.5)
@@ -5780,7 +5780,7 @@ button.botui-actions-buttons-button {
     -webkit-transform:rotateX(90deg) translate3d(0,0,30px)
 }
 .logolink a {
-    color:#464646;
+    color:#FFFFFF;
     float:left;
     font-size:20px;
     font-weight:800;
@@ -5794,7 +5794,7 @@ button.botui-actions-buttons-button {
 .logolink .sakurasono {
     background-color:rgba(255,255,255,.5);
     border-radius:5px;
-    color:#464646;
+    color:#FF0000;
     height:auto;
     line-height:25px;
     margin-right:0;
@@ -5811,7 +5811,7 @@ button.botui-actions-buttons-button {
     color:orange
 }
 .logolink.moe-mashiro a {
-    color:#464646;
+    color:#FFFFFF;
     float:left;
     font-size:28px;
     font-weight:800;
@@ -6124,7 +6124,7 @@ button.botui-actions-buttons-button {
     z-index:99;
     visibility:visible;
     writing-mode:vertical-rl;
-    transition-property:left,bottom;
+    transiton-property:left,bottom;
     transition-duration:.5s,.5s
 }
 .live2d-tool:hover {
@@ -6160,7 +6160,7 @@ button.botui-actions-buttons-button {
     font-weight:bold;
     z-index:99;
     writing-mode:vertical-rl;
-    transition-property:margin-left,bottom;
+    transiton-property:margin-left,bottom;
     transition-duration:.5s,.5s
 }
 .isWebKit .live2d-tool:hover {
@@ -6172,7 +6172,7 @@ button.botui-actions-buttons-button {
     .live2d-tool {
     margin-left:0;
     left:-17px;
-    transition-property:left,bottom
+    transiton-property:left,bottom
 }
 .live2d-tool:hover {
     margin-left:0
@@ -6258,7 +6258,7 @@ button.botui-actions-buttons-button {
     z-index:99;
     font-family:'Ubuntu';
     padding:10px 20px;
-    transition-property:right;
+    transiton-property:right;
     transition-duration:.3s,.3s
 }
 .changeSkin .keys {
@@ -6945,7 +6945,7 @@ to {
     top:0;
     height:3px;
     background:#bebebe;
-    transition-property:width,background;
+    transiton-property:width,background;
     transition-duration:1s,1s;
     z-index:99999
 }
@@ -7486,7 +7486,7 @@ to {
     z-index:99;
     font-family:'Ubuntu',sans-serif;
     transform:scaleX(0);
-    transition-property:transform,background;
+    transiton-property:transform,background;
     transition-duration:.3s,.3s
 }
 .skin-menu.show {
@@ -7633,26 +7633,28 @@ img[src*="#in-center"] {
     width:auto;
     height:65px;
     background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wave1.png") repeat-x;
+    _filter:alpha(opacity=80);
     position:absolute;
     bottom:0;
     width:400%;
     left:-236px;
     z-index:5;
     opacity:1;
-    transition-property:opacity,bottom;
+    transiton-property:opacity,bottom;
     transition-duration:.4s,.4s
 }
 #banner_wave_2 {
     width:auto;
     height:80px;
     background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wave2.png") repeat-x;
+    _filter:alpha(opacity=80);
     position:absolute;
     bottom:0;
     width:400%;
     left:0;
     z-index:4;
     opacity:1;
-    transition-property:opacity,bottom;
+    transiton-property:opacity,bottom;
     transition-duration:.4s,.4s
 }
 .banner_wave_hide,.banner_wave_hide_fit_skin {
