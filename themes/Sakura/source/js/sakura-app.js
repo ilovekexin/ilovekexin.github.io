@@ -1046,9 +1046,6 @@ mashiro_global.ini.normalize()
 var home = location.href,
   s = $('#bgvideo')[0],
   Siren = {
-    BSZ: function() {
-      $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js')
-    },
     TOC: function () {
       if ($('.toc').length > 0 && document.body.clientWidth > 1200) {
         if ($(".pattern-center").length > 0) { //有图的情况
@@ -1085,15 +1082,15 @@ var home = location.href,
             $('.toc').removeClass('toc-fixed')
           }
         }
-        $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
+        $.getScript('//cdn.jsdelivr.net/gh/ilovenuonuo/cdn@2.3/js/busuanzi.js');
       }
     },
     AB: function () {
       if (window.location.pathname.indexOf('about') > -1) {
-        $.getScript('/js/botui.js', function () {
-          if (typeof(botui) == undefined && !botui.message) {
+        $.getScript('//cdn.jsdelivr.net/vue/latest/vue.min.js', function () {
+          $.getScript('//unpkg.com/botui/build/botui.min.js', function () {
             bot_ui_ini()
-          }
+          })
         })
       }
     },
@@ -1547,7 +1544,6 @@ $(function () {
       Siren.MJ()
       Siren.AB()
       Siren.TOC()
-      Siren.BSZ()
       if (mashiro_option.NProgressON) NProgress.done()
       mashiro_global.ini.pjax()
       $('#loading').fadeOut(500)
@@ -1586,6 +1582,15 @@ $(function () {
       Siren.CE()
       timeSeriesReload(true)
     }, false)
+    $(document).on('pjax:start', function () {
+    if (window.aplayers) {
+    	for (var i = 0; i < aplayers.length; i++) {
+	    	if (aplayers[i].container.className.search("aplayer aplayer-tag-marker") != -1 ) {
+		    	try {aplayers[i].destroy()} catch(e){}
+	    	}
+	    }	
+    }
+	});
   }
   $.fn.postLike = function () {
     if ($(this).hasClass('done')) {
